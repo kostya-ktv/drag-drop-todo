@@ -1,8 +1,8 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import styled from 'styled-components'
-import logo from "../../Assets/WORK.svg"
-import { useProgressTasksSelector } from '../../Store/selectors/store.selectors'
+import { useProgressTasksSelector } from '../../../../Store/selectors/store.selectors'
+import logo from "../../../../Assets/WORK.svg"
 import TaskList from '../TaskList'
 import { handleDragOver, handleDrop } from '../TaskList/Task/task.service'
 

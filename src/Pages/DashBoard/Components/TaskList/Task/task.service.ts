@@ -1,6 +1,6 @@
 import { Dispatch } from "redux"
-import { appDispatch } from "../../../Store/actions/store.actions"
-import { TaskType } from "../../../Store/types"
+import { appDispatch } from "../../../../../Store/actions/store.actions"
+import { TaskType } from "../../../../../Store/types"
 
 export function handleDragStart(e: React.DragEvent<HTMLDivElement>, task: TaskType): void {
    e.dataTransfer.setData("task", JSON.stringify(task))

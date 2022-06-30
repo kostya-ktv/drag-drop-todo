@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
-import { TaskType } from '../../Store/types'
+import { TaskType } from '../../../../Store/types'
 import Task  from './Task'
 
 const Component = styled.div`

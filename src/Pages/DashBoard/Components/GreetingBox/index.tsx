@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import logo from "../../Assets/youCanDoIt.png"
-import info from "../../Assets/info.svg"
-import add from "../../Assets/add.svg"
-import { ModalCommon } from '../UI/Modal'
+import logo from "../../../../Assets/youCanDoIt.png"
+import info from "../../../../Assets/info.svg"
+import add from "../../../../Assets/add.svg"
 import CreateTask from '../CreateTask'
+import { ModalCommon } from '../../../../Common/Components/UI/Modal'
 
 const Component = styled.div`
   position: relative;

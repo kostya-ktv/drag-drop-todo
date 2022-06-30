@@ -1,9 +1,9 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import styled from 'styled-components'
-import doneCheck from "../../Assets/done_check.svg"
-import sunImg from "../../Assets/sun.svg"
-import { useCompleteTasksSelector } from '../../Store/selectors/store.selectors'
+import { useCompleteTasksSelector } from '../../../../Store/selectors/store.selectors'
+import doneCheck from "../../../../Assets/done_check.svg"
+import sunImg from "../../../../Assets/sun.svg"
 import TaskList from '../TaskList'
 import { handleDragOver, handleDrop } from '../TaskList/Task/task.service'
 

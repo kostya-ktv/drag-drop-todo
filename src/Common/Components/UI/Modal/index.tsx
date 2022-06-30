@@ -1,5 +1,5 @@
 import { FC, ReactNode, useEffect, useState } from "react";
-import x from "../../../Assets/close.svg";
+import x from "../../../../Assets/close.svg";
 import styled, { css } from "styled-components";
  
 interface Props {

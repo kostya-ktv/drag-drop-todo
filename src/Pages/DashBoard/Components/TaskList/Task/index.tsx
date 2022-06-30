@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import styled from 'styled-components'
-import { TaskType } from '../../../Store/types'
+import { TaskType } from '../../../../../Store/types'
 import { handleDragStart } from './task.service'
 
 const Component = styled.div`

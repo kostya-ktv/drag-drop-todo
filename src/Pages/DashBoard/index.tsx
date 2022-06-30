@@ -1,10 +1,10 @@
 import styled from "styled-components"
 import backGroundImg from "../../Assets/background.jpg"
 import { useCompleteTasksSelector, useNotesSelector, useProgressTasksSelector } from "../../Store/selectors/store.selectors"
-import CompleteList from "../CompleteList"
-import GreetingBox from "../GreetingBox"
-import NoteList from "../NoteList"
-import ProgressList from "../ProgressList"
+import CompleteList from "./Components/CompleteList"
+import GreetingBox from "./Components/GreetingBox"
+import NoteList from "./Components/NoteList"
+import ProgressList from "./Components/ProgressList"
 
 const Component = styled.div`
    display: flex;

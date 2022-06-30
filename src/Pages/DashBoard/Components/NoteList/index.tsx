@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import noteImg from '../../Assets/note.svg'
-import noteLogo from '../../Assets/note-logo.svg'
-import { useNotesSelector } from '../../Store/selectors/store.selectors'
+import noteImg from '../../../../Assets/note.svg'
+import noteLogo from '../../../../Assets/note-logo.svg'
+import { useNotesSelector } from '../../../../Store/selectors/store.selectors'
 
 type Props = {}
 const Component = styled.div`
