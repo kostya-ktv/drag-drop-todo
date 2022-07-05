@@ -1,5 +1,6 @@
-import React, { FC } from 'react'
+import React, { FC, useState } from 'react'
 import styled from 'styled-components'
+import { Popup } from '../../../../../Common/Components/UI/Popup'
 import { TaskType } from '../../../../../Store/types'
 import { handleDragStart } from './task.service'
 
@@ -40,18 +41,23 @@ type Props = {
 
 const Task:FC<Props> = ({task}) => {
    const {expiredDate, priority, title, isExpired} = task
+   const [isShowPopup, setIsShowPopup] = useState<boolean>(false)
+   const showPopupClickHandler = () => {
+      setIsShowPopup(!isShowPopup)
+   }
   return (
    <Component
          draggable={true}
          className='Task'
          onDragStart={(e) => handleDragStart(e, task)}
+         onClick={showPopupClickHandler}
       >
-            <header>
-               <span className='count-down'>{expiredDate}</span>
-               <div className='priority' style={{backgroundColor: priority}}></div>
-            </header>
-            <h3>{title}</h3>
-
+         <header>
+            <span className='count-down'>{expiredDate}</span>
+            <div className='priority' style={{backgroundColor: priority}}></div>
+         </header>
+         <h3>{title}</h3>
+         {isShowPopup && <Popup/>}
     </Component>
   )
 }

@@ -32,9 +32,11 @@ export const InputDate:FC<Props> = ({title, onChange, value, isValidate}) => {
             className="pick-date" 
             value={value} 
             onChange={handleChange}
+            min={new Date().toISOString().split(".")[0]}
          />
+
          <div className="error-msg">
-         {!isValidate && "Date must be more that current date"}
+         {!isValidate && "Date must be greater than current date and time"}
          </div>
       </Component>
    )

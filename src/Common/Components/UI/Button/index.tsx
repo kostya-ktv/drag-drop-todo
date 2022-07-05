@@ -40,12 +40,15 @@ interface Props extends React.HTMLProps<HTMLButtonElement> {
    label: string
    backColor: string
 }
-export const Button:FC<Props> = ({label, backColor, disabled}) => {
+export const Button:FC<Props> = (props) => {
+   const {label, backColor, disabled, type, ...buttonProps} = props
    return(
       <Component backColor={backColor} isDisable={disabled}>
          <button 
             className={disabled ? "submit-btn disabled-btn" : "submit-btn"} 
-            disabled={disabled}>
+            disabled={disabled}
+            {...buttonProps}
+         >
             {label}
          </button>
       </Component>

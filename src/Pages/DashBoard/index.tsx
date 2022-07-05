@@ -23,7 +23,7 @@ const Component = styled.div`
       background-color: white;
       width: 1200px;
       position: relative;
-      height: 80vh;
+      height: 95vh;
       padding: 20px;
       box-shadow: 0px 1px 20px #a8a6a6;
    }
@@ -34,7 +34,6 @@ const Component = styled.div`
       width: 100%;
       .greet-complete {
          display: flex;
-         height: 1000px;
          margin-bottom: 30px;
       }
    }
